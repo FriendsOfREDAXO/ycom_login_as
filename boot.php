@@ -11,7 +11,7 @@ rex_extension::register('YCOM_AUTH_USER_CHECK', function ($ep) {
             {
                 $user_id = $user_id_link;   
             }
-            elseif ($default_id >= 1) {
+            else {
                 $user_id = $default_id;
             }
             if (($user_id >= 1 && !rex_ycom_auth::getUser()) || $user_id_link && rex_ycom_auth::getUser() && $ycom_user->id != $user_id_link ) {

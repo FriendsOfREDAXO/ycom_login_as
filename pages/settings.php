@@ -6,6 +6,6 @@ $field->setLabel($addon->i18n('ycom_impersonate_default_id'));
 
 $fragment = new rex_fragment();
 $fragment->setVar('class', 'edit', false);
-$fragment->setVar('title', "Matomo Settings", false);
+$fragment->setVar('title', "ycom_impersonate_settings", false);
 $fragment->setVar('body', $form->get(), false);
 echo $fragment->parse('core/page/section.php');

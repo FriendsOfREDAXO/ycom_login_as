@@ -1,0 +1,8 @@
+package: addon_key
+version: '0.0.0'
+author: 'Friends Of REDAXO'
+supportpage: https://github.com/FriendsOfREDAXO/addon_key
+requires:
+    redaxo: '^5.13.0'
+    php:
+        version: '>=7.3, <9'

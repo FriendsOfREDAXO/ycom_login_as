@@ -7,7 +7,7 @@ page:
     block: ycom
     perm: ycom_impersonate[]
     pjax: true
-    icon: rex-icon rex-icon-seo
+    icon: rex-icon rex-icon-user
     subpages:
         settings:
                 title: 'translate:ycom_impersonate_settings'

@@ -1,4 +1,7 @@
-ycom_impersonate_default_id = Standard-Login ID
+ycom_impersonate_default_id = Standard-Nutzer:in
+ycom_impersonate_default_id_user = Hier kann ein YCom-Login gewählt werden welches für alle berechtigten Backendnutzrt gilt. 
 ycom_impersonate_title = YCom Impersonate
 ycom_impersonate_settings = Einstellungen
 ycom_impersonate_login_as = Login als: 
+ycom_impersonate_select = Niemand ausgewählt
+

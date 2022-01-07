@@ -8,6 +8,7 @@ $field->setAttribute('"data-live-search', 'true');
 $field->setLabel($addon->i18n('ycom_impersonate_default_id'));
 $select = $field->getSelect();
 $select->setSize(1);
+$select->addOption($addon->i18n('ycom_impersonate_select'),0);
 $mSql = rex_sql::factory();
         foreach ($mSql->getArray('SELECT id, firstname, name FROM ' . rex::getTablePrefix() . 'ycom_user ORDER BY name') as $m) {
             $select->addOption($m['firstname'].' '.$m['name'], (int) $m['id']);

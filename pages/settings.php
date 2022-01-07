@@ -4,7 +4,7 @@ $form = rex_config_form::factory($addon->name);
 
 $field = $form->addSelectField('default_id', null, ['class' => 'form-control']);
 $field->setAttribute('class', 'form-control selectpicker');
-$field->setAttribute('"data-live-search', 'true');
+$field->setAttribute('data-live-search', 'true');
 $field->setLabel($addon->i18n('ycom_impersonate_default_id'));
 $select = $field->getSelect();
 $select->setSize(1);

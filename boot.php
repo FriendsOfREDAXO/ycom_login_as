@@ -30,7 +30,7 @@ if (rex::isBackend() && rex_request('table_name') == 'rex_ycom_user') {
         // die Liste holen
         $list = $ep->getSubject();
         $list->setColumnFormat('login', 'custom', function ($params ) {
-            return $params['list']->getValue('login').'<br><a target="_blank" rel="noreferrer noopener" href="/?ycom_user_id='.$params['list']->getValue('id').'">'.rex_i18n::msg('ycom_impersonate_login_as').' '.$params['list']->getValue('login').'</a>';
+            return $params['list']->getValue('login').'<br><a target="_blank" rel="noreferrer noopener" href="'.rex_url::frontend().'?ycom_user_id='.$params['list']->getValue('id').'">'.rex_i18n::msg('ycom_impersonate_login_as').' '.$params['list']->getValue('login').'</a>';
         }); 
     });
 }

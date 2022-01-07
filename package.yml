@@ -10,7 +10,7 @@ page:
     icon: rex-icon rex-icon-seo
     subpages:
         settings:
-                title: 'ycom_impersonate_settings'
+                title: 'translate:ycom_impersonate_settings'
                 perm: admin[] 
         help: { title: 'translate:matomo_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
 requires:

@@ -1,2 +1,3 @@
-# rex_repo_template
-REDAXO AddOn english readme
+#YCOM Impersonate. 
+
+Login as selected YCOM user in frontend.

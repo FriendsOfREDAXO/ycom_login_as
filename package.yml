@@ -1,7 +1,17 @@
 package: ycom_impersonate
-version: '0.0.1'
+version: '0.0.2'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/ycom_impersonate
+page:
+    title: 'translate:ycom_impersonate_title'
+    perm: ycom_impersonate[]
+    pjax: true
+    icon: rex-icon rex-icon-seo
+    subpages:
+        settings:
+                title: 'ycom_impersonate_settings'
+                perm: admin[] 
+        help: { title: 'translate:matomo_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
 requires:
     redaxo: '^5.13.0'
     php:

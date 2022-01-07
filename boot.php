@@ -24,3 +24,15 @@ rex_extension::register('YCOM_AUTH_USER_CHECK', function ($ep) {
         }
     }
 });
+
+if (rex::isBackend() && rex_request('table_name') == 'rex_ycom_user') {
+    rex_extension::register('YFORM_DATA_LIST', function( $ep ) {
+        // die Liste holen
+        $list = $ep->getSubject();
+        $list->setColumnFormat('login', 'custom', function ($params ) {
+            return $params['list']->getValue('login').'<br><a target="_blank" rel="noreferrer noopener" href="/?ycom_user_id='.$params['list']->getValue('id').'">'.rex_i18n::msg('ycom_impersonate_login_as').' '.$params['list']->getValue('login').'</a>';
+        }); 
+    });
+}
+
+

@@ -1,5 +1,5 @@
 package: ycom_impersonate
-version: '1.0.0'
+version: '1.0.0-beta1'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/ycom_impersonate
 page:
@@ -15,5 +15,7 @@ page:
         help: { title: 'translate:matomo_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
 requires:
     redaxo: '^5.13.0'
+    packages:
+        ycom: '>=4'
     php:
         version: '>=7.3, <9'

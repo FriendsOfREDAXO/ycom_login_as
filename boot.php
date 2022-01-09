@@ -1,6 +1,6 @@
 <?php
 rex_extension::register('YCOM_AUTH_USER_CHECK', function ($ep) {
-    // backendnutzer bei jedem seitenaufruf einloggen (wg ycom benutzerwechsel)
+    // inspired by Ingo Winter
     if (rex_backend_login::hasSession() && $beUser = rex_backend_login::createUser()) {
         if ($beUser->isAdmin() || $beUser->hasPerm('ycom[]')) {
             $addon = rex_addon::get('ycom_impersonate');

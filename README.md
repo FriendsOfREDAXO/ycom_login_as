@@ -11,5 +11,3 @@ to do:
 
 - [x] auto login for Admins (Allways logged in) or setup in profile
 - [x] User list links
-- Quick Navigation Selectbox
-- Minibar drop up

@@ -12,7 +12,7 @@ page:
         settings:
                 title: 'translate:ycom_impersonate_settings'
                 perm: admin[] 
-        help: { title: 'translate:matomo_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
+        help: { title: 'translate:ycom_impersonate_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
 requires:
     redaxo: '^5.13.0'
     packages:

@@ -7,3 +7,5 @@ Features:
 - Backend users with admin rights or YCOM[] rights, can be automatically logged in via a specified default user. 
 - Backend users with admin rights or YCOM[] rights can login as any disired YCOM user. 
 
+Please make login column visible in YCOM User table
+

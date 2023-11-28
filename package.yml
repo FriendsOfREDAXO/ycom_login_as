@@ -1,21 +1,21 @@
-package: ycom_impersonate
-version: '1.0.1'
+package: ycom_loginas
+version: '1.0.0-dev'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/ycom_impersonate
 page:
     title: 'translate:ycom_impersonate_title'
     block: ycom
-    perm: ycom_impersonate[]
+    perm: ycom_loginas[]
     pjax: true
     icon: rex-icon rex-icon-user
     subpages:
         settings:
-                title: 'translate:ycom_impersonate_settings'
+                title: 'translate:ycom_loginas_settings'
                 perm: admin[] 
         help: { title: 'translate:ycom_impersonate_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
 requires:
-    redaxo: '^5.13.0'
+    redaxo: '^5.15.0'
     packages:
-        ycom: '>=4'
+        ycom: '>=4.2'
     php:
-        version: '>=7.3, <9'
+        version: '>=8.1, <9'

@@ -5,7 +5,7 @@ supportpage: https://github.com/FriendsOfREDAXO/ycom_impersonate
 page:
     title: 'translate:ycom_login_as_title'
     block: ycom
-    perm: ycom_loginas[]
+    perm: ycom_login_as[]
     pjax: true
     icon: rex-icon rex-icon-user
     subpages:

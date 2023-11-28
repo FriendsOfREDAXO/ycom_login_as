@@ -1,18 +1,18 @@
-package: ycom_loginas
+package: ycom_login_as
 version: '1.0.0-dev'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/ycom_impersonate
 page:
-    title: 'translate:ycom_impersonate_title'
+    title: 'translate:ycom_login_as_title'
     block: ycom
     perm: ycom_loginas[]
     pjax: true
     icon: rex-icon rex-icon-user
     subpages:
         settings:
-                title: 'translate:ycom_loginas_settings'
+                title: 'translate:ycom_login_as_settings'
                 perm: admin[] 
-        help: { title: 'translate:ycom_impersonate_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
+        help: { title: 'translate:ycom_login_as_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
 requires:
     redaxo: '^5.15.0'
     packages:

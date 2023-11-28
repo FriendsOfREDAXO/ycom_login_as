@@ -1,5 +1,5 @@
 ycom_login_as_default_id = Standard-Nutzer:in
-ycom_login_as_default_id_notice = Hier kann ein YCom-Login gewählt werden welches für alle berechtigten Backend-Nutzer gilt. 
+ycom_login_as_default_id_notice = Hier kann ein YCom-Login gewählt werden der für alle berechtigten Backend-Nutzer gilt. 
 ycom_login_as_title = YCom Login as
 ycom_login_as_settings = Einstellungen
 ycom_login_as_login_as = Login als: 

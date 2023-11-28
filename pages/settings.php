@@ -10,8 +10,8 @@ $select = $field->getSelect();
 $select->setSize(1);
 $select->addOption($addon->i18n('ycom_login_as_select'),0);
 $mSql = rex_sql::factory();
-        foreach ($mSql->getArray('SELECT id, firstname, name FROM ' . rex::getTablePrefix() . 'ycom_user ORDER BY name') as $m) {
-            $select->addOption($m['firstname'].' '.$m['name'], (int) $m['id']);
+        foreach ($mSql->getArray('SELECT login, id, firstname, name FROM ' . rex::getTablePrefix() . 'ycom_user ORDER BY name') as $m) {
+            $select->addOption(.$m['firstname'].' '.$m['name'].' | '.$m['login'], (int) $m['id']);
 }
 $field->setNotice($addon->i18n('ycom_login_as_default_id_notice'));
 

@@ -11,7 +11,7 @@ page:
     subpages:
         settings:
                 title: 'translate:ycom_login_as_settings'
-                perm: admin[] 
+                perm: ycom_login_as[]
         help: { title: 'translate:ycom_login_as_help', itemclass: pull-right, icon: rex-icon fa-question-circle, subPath: README.md}       
 requires:
     redaxo: '^5.15.0'
